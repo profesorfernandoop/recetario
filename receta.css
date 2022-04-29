@@ -1,0 +1,51 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+    font-size: 16px;
+}
+#recetario{
+    width: 60%;
+    margin:50px auto;
+}
+.fsize-1-5{
+    font-size: 1.5rem;
+    font-weight: 500;
+ }
+ .fsize-1-2{
+    font-size: 1.2rem;
+    font-weight:200;
+ }
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table th,table td{
+    padding:0.50em;
+}
+
+.tablaconborde{
+	border: 2px solid #41a0ff ;
+}
+.tablaconborde td,.tablaconborde th{
+	border: 1px solid #41a0ff ;
+}
+
+.tablacebra thead th{
+    background-color: rgb(5, 140, 218);
+    color:rgb(255, 255, 255);
+
+}
+.tablacebra tbody tr:nth-of-type(even){
+    background-color: #fdfdfd;
+	color:black;
+}
+.tablacebra tbody tr:nth-of-type(odd){
+    background-color:#abe3fd;
+    color:black;
+}
+footer{
+    line-height: 2.5rem;
+    background-color: #41a0ff;
+    color:white;
+    text-align: center;
+}

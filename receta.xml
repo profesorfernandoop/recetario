@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="receta.xsl" type="text/xsl"?>
+<!DOCTYPE recetario [
+    <!ELEMENT recetario (receta*)>
+    <!ELEMENT receta (nombre,autor?,tiempopreparacion,tiempototal,ingredientes,elaboracion)>
+    <!ATTLIST receta categoria  CDATA "legumbres">
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT tiempopreparacion (((horas),(minutos?))|((horas?),(minutos)))>
+    <!ELEMENT horas (#PCDATA)>
+    <!ELEMENT minutos (#PCDATA)>
+    <!ELEMENT tiempototal (((horas),(minutos?))|((horas?),(minutos)))>
+    <!ELEMENT ingredientes (ingrediente+)>
+    <!ATTLIST ingredientes comensales  CDATA "4">
+    <!ELEMENT ingrediente (nombre,cantidad?)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ATTLIST cantidad unidad  CDATA #IMPLIED >
+    <!ELEMENT elaboracion (paso)*>
+    <!ELEMENT paso (#PCDATA)>
+    <!ATTLIST paso numero CDATA "0">
+]>
+<recetario>
+    <receta categoria="legumbres">
+        <nombre>Alubias de Tolosa con berza y morcilla</nombre>
+        <autor>Carlos Arguiñano</autor>
+        <tiempopreparacion>
+           <minutos>25</minutos>
+        </tiempopreparacion>
+        <tiempototal>
+           <horas>2</horas>
+           <minutos>55</minutos>
+        </tiempototal>
+        <ingredientes comensales="4">
+            <ingrediente>
+                <nombre>Alubias de Tolosa</nombre>
+                <cantidad unidad="gramos">400</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Morcilla</nombre>
+                <cantidad>1</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Guindillas en vinagre</nombre>
+                <cantidad>12</cantidad>
+            </ingrediente> 
+            <ingrediente>
+                <nombre>Ajo</nombre>
+                <cantidad unidad="diente">2</cantidad>
+            </ingrediente>                        
+            <ingrediente>
+                <nombre>Aceite</nombre>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Sal</nombre>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Perejil</nombre>
+            </ingrediente>
+        </ingredientes>
+        <elaboracion>
+            <paso numero="1">
+                Pon las alubias en una cazuela. Cúbrelas con agua (2 litros) y cuando empiecen a hervir, tapa la cazuela y déjalas cocer a fuego suave durante 2 horas y media. Para que el líquido vaya espesando durante la cocción puedes remover la cazuela (sin meter ninguna cuchara) de vez en cuando.Cuando ya estén hechas, sazónalas y remueve la cazuela para que la sal se reparta bien.
+            </paso>
+            <paso numero="2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tellus fermentum, suscipit sapien id, vulputate ante. Sed ex ex, vestibulum et purus a, cursus ultricies sem. Suspendisse vel augue.
+            </paso>
+        </elaboracion>
+    </receta>
+    <receta categoria="Arroces y cereales">
+        <nombre>Arroz con pollo y verduras</nombre>
+        <autor>Carlos Arguiñano</autor>
+        <tiempopreparacion>
+            <minutos>30</minutos>
+        </tiempopreparacion>
+        <tiempototal>
+            <minutos>50</minutos>
+        </tiempototal>
+        <ingredientes comensales="6">
+            <ingrediente>
+                <nombre>Arroz</nombre>
+                <cantidad unidad="gramos">600</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Calabacín</nombre>
+                <cantidad unidad="elemento">1</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Puerros</nombre>
+                <cantidad unidad="elemento">2</cantidad>
+            </ingrediente> 
+            <ingrediente>
+                <nombre>Judias verdes</nombre>
+                <cantidad unidad="gramos">200</cantidad>
+            </ingrediente> 
+            <ingrediente>
+                <nombre>Pollo</nombre>
+                <cantidad unidad="gramos">600</cantidad>
+            </ingrediente> 
+            <ingrediente>
+                <nombre>Ajo</nombre>
+                <cantidad unidad="elemento">2</cantidad>
+            </ingrediente>                        
+            <ingrediente>
+                <nombre>Aceite</nombre>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Sal</nombre>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Perejil</nombre>
+            </ingrediente>
+        </ingredientes>
+        <elaboracion>
+            <paso numero="1">
+                Pica la cebolleta en daditos y ponla a rehogar en una tartera con un chorrito de aceite. Retira la parte inferior y superior de los puerros, lávalos, pícalos finamente y agrégalos. Pela las zanahorias, córtala en daditos y añádelas. Corta el calabacín en daditos y añádelo. Retira las puntas de las judías, córtalas finamente y agrégalas. Sazona y rehoga bien todas las verduras.
+            </paso>
+            <paso numero="2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tellus fermentum, suscipit sapien id, vulputate ante. Sed ex ex, vestibulum et purus a, cursus ultricies sem. Suspendisse vel augue.
+            </paso>
+        </elaboracion>
+    </receta>    
+</recetario>
