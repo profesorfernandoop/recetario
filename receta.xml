@@ -99,7 +99,7 @@
             </ingrediente> 
             <ingrediente>
                 <nombre>Ajo</nombre>
-                <cantidad unidad="elemento">2</cantidad>
+                <cantidad unidad="diente">2</cantidad>
             </ingrediente>                        
             <ingrediente>
                 <nombre>Aceite</nombre>
