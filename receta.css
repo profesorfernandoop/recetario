@@ -4,10 +4,11 @@ html{
     font-size: 16px;
 }
 h1.txtcabecera{
-    font-size: large;
+    font-size: 1.75rem;
     background-color: #41a0ff;
     color:whitesmoke;
     text-align: center;
+    padding: 20px;
 }
 #recetario{
     width: 60%;
