@@ -1,3 +1,4 @@
 Archivo a guardar
 Ahora estoy haciendo un cambio en nuevo.txt
-
+-------------------------------------------------
+Cambios en archivo nuevo.txt
