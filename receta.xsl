@@ -27,7 +27,9 @@
             <ul>
               <li>
                     <xsl:value-of select="cantidad"></xsl:value-of>&nbsp;
-                    <xsl:value-of select="cantidad/@unidad"></xsl:value-of>&nbsp;
+                    <xsl:if test="cantidad[@unidad != 'elemento']">
+                      <xsl:value-of select="cantidad/@unidad"></xsl:value-of>&nbsp;
+                    </xsl:if>
                     <xsl:value-of select="nombre"></xsl:value-of>&nbsp;
               </li>
             </ul>
