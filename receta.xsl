@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="receta.css" />
       </head>
       <body>
-      <h1> ESTO ES UN CAMBIO QUE HABRÁ QUE CONFIRMAR </h1>
+      <h1 class="txtcabecera"> NUESTRAS RECETAS </h1>
         <xsl:for-each select="recetario/receta">
           <h1>
             <xsl:value-of select="@categoria"></xsl:value-of>
